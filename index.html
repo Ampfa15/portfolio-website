@@ -3,59 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Ampfa Portfolio</title>
 
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 
 <body>
 
-    
+    <!-- Navigation -->
     <header>
+        <nav class="navbar">
 
-        <div class="logo">
-            <img src="assets/logo.svg" alt="Logo">
-            <h2>Ampfa Portfolio</h2>
-        </div>
+            <div class="logo">AMPFA</div>
 
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About Me</a>
-            <a href="contact.html">Contact Us</a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+
+            <div class="hamburger" onclick="toggleMenu()">
+                ☰
+            </div>
+
         </nav>
-
     </header>
 
-    
+    <!-- Hero Section -->
     <section class="hero">
 
         <div class="hero-text">
 
-            <h1>Ampfarisaho Netshitongwe</h1>
+            <h1>Hello, I'm Ampfarisaho Netshitongwe</h1>
 
             <p>
                 I am an aspiring software developer and technology enthusiast.
-                I enjoy learning web development, cybersecurity, and data analytics.
-                I am passionate about building modern websites and solving real-world problems using technology.
+                I enjoy building websites, learning programming, and solving
+                real-world problems using technology.
             </p>
+
+            <a href="about.html" class="btn">
+                Learn More
+            </a>
 
         </div>
 
         <div class="hero-image">
-            <img src="assets/profile.svg" alt="My Photo">
+            <img src="images/profile.jpg" alt="Profile Picture">
         </div>
 
-    </gsection>
+    </section>
 
-    
+    <!-- Video Section -->
     <section class="video-section">
 
-        <h2>My Introduction Video</h2>
+        <h2>Introduction Video</h2>
 
-        <div class="video-wrap">
-            <iframe width="800" height="450" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Intro video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
+        <video controls>
+            <source src="videos/intro.mp4" type="video/mp4">
+        </video>
 
     </section>
 
@@ -64,17 +71,27 @@
 
         <p>Phone: +27 607057371</p>
 
-        <div class="socials">
+        <div class="social-links">
 
-            <a href="https://facebook.com" target="_blank">Facebook</a>
+            <a href="https://facebook.com" target="_blank">
+                Facebook
+            </a>
 
-            <a href="https://instagram.com" target="_blank">Instagram</a>
+            <a href="https://instagram.com" target="_blank">
+                Instagram
+            </a>
 
-            <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+            <a href="https://linkedin.com" target="_blank">
+                LinkedIn
+            </a>
+
+            <a href="https://github.com/Ampfa15" target="_blank">
+                GitHub
+            </a>
 
         </div>
 
-        <p>© 2026 Ampfa Portfolio. All Rights Reserved.</p>
+        <p>© 2026 Ampfa Portfolio</p>
 
     </footer>
 
